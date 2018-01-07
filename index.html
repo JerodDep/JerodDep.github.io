@@ -1,11 +1,203 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
 <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <!-- Script Imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- Active Button Change -->
+    <script type="text/javascript">
+        $(window).scroll(function() {
+             if ($(this).scrollTop() >= $('#contact').position().top) {
+                /* Check for small screens */
+                if (window.innerWidth < 601) {
+                    $("#home_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#about_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#photo_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#contact_button_small").removeClass("w3-gray").addClass("w3-black");
+                } else {
+                    $("#home_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#about_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#photo_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#contact_button").removeClass("w3-hover-black").addClass("w3-black");
+                }
+            } else if ($(this).scrollTop() >= $('#work').position().top) {
+                /* Check for small screens */
+                if (window.innerWidth < 601) {
+                    $("#home_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#about_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#photo_button_small").removeClass("w3-gray").addClass("w3-black");
+                    $("#contact_button_small").removeClass("w3-black").addClass("w3-gray");
+                } else {
+                    $("#home_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#about_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#photo_button").removeClass("w3-hover-black").addClass("w3-black");
+                    $("#contact_button").removeClass("w3-black").addClass("w3-hover-black");
+                }
+            } else if ($(this).scrollTop() >= $('#about').position().top) {
+                /* Check for small screens */
+                if (window.innerWidth < 601) {
+                    $("#home_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#about_button_small").removeClass("w3-gray").addClass("w3-black");
+                    $("#photo_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#contact_button_small").removeClass("w3-black").addClass("w3-gray");
+                } else {
+                    $("#home_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#about_button").removeClass("w3-hover-black").addClass("w3-black");
+                    $("#photo_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#contact_button").removeClass("w3-black").addClass("w3-hover-black");
+                }
+            } else if ($(this).scrollTop() >= $('#main').position().top) {
+                /* Check for small screens */
+                if (window.innerWidth < 601) {
+                    $("#home_button_small").removeClass("w3-gray").addClass("w3-black");
+                    $("#about_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#photo_button_small").removeClass("w3-black").addClass("w3-gray");
+                    $("#contact_button_small").removeClass("w3-black").addClass("w3-gray");
+                } else {
+                    $("#home_button").removeClass("w3-hover-black").addClass("w3-black");
+                    $("#about_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#photo_button").removeClass("w3-black").addClass("w3-hover-black");
+                    $("#contact_button").removeClass("w3-black").addClass("w3-hover-black");
+                }
+            }
+        });
+    </script>
+    
+</head>    
+    
+    
+<body class="w3-black">
 
-</head>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/images/portrait.jpg" style="width:100%">
+  <a id="home_button" href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a id="about_button" href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a id="photo_button" href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a id="contact_button" href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<body>
-  <p>Test</p>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a id="home_button_small" href="#main" class="w3-bar-item w3-button w3-black" style="width:25% !important">HOME</a>
+    <a id="about_button_small" href="#about" class="w3-bar-item w3-button w3-gray" style="width:25% !important">ABOUT</a>
+    <a id="photo_button_small" href="#work" class="w3-bar-item w3-button w3-gray" style="width:25% !important">PROJECTS</a>
+    <a id="contact_button_small" href="#contact" class="w3-bar-item w3-button w3-gray" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header-Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Jerod D'Epifanio</h1>
+    <p>Game Developer, Programmer, and Student</p>
+    <img src="/images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Little About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- End Grid/Pricing tables -->
+    </div>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="work">
+    <h2 class="w3-text-light-grey">My Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for work -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 1-(810)-417-3997</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: depifan3@msu.edu</p>
+    </div><br>
+
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
-
 </html>
