@@ -235,7 +235,6 @@
     <!-- Start Clash of the Past -->
         
     <div class="w3-row-padding" style="margin:0 -16px">
-        <!--a href="https://ldjam.com/events/ludum-dare/39/balance"-->
         <h1 class="w3-text-light-grey" style="margin-top: 1%; text-align: center">Clash of the Past</h1>
         
         <!-- Slideshow container -->
@@ -278,6 +277,54 @@
     </div>    
         
     <!-- End Clash of the Past -->
+        
+    <hr style="width:100%" class="w3-opacity">
+        
+    <!-- Start Dialog System -->
+        
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <h1 class="w3-text-light-grey" style="margin-top: 1%; text-align: center">Node Based Dialog System</h1>
+        
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides3 fade-out ">
+            <img src="images/cop1.png" style="width:100%">
+          </div>
+
+          <div class="mySlides3 fade-out ">
+            <img src="images/cop2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides3 fade-out ">
+            <img src="images/cop3.png" style="width:100%">
+          </div>
+            
+          <div class="mySlides3 fade-out ">
+            <img src="images/cop4.png" style="width:100%">
+          </div>
+
+          <div class="mySlides3 fade-out ">
+            <img src="images/cop5.png" style="width:100%">
+          </div>
+        
+        <p class="w3-opacity" style="margin-left: 0%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this 48 hour Ludum Dare game jam, I wanted to focus on effects and lighting. With that in mind, I went forward with my first split-screen co-op game. Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blaBlah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.Blah blah ber.h ber.Blah blah ber.Blah blah ber.Blah blah ber.</p>
+        
+        <!-- download game buttons -->
+        <div style="display: flex; justify-content: center;">
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <a href="https://www.dropbox.com/s/gitgilhor9icdmk/ClashofthePast_Windows.zip?dl=1"><i class="mdi mdi-windows"></i>Download Game</a>
+            </button>
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <a href="https://www.dropbox.com/s/t5j7whctvmikf96/ClashofthePast_Mac.zip?dl=1"><i class="mdi mdi-apple"></i>Download Game</a>
+            </button>
+        </div>
+        <!-- End Download Game Buttons -->
+            
+    </div>    
+        
+    <!-- End Dialog System -->
         
         
     <!--div class="w3-row-padding" style="margin:0 -16px">
@@ -331,6 +378,22 @@
             if (slideIndex2 > slides2.length) {slideIndex2 = 1} 
             slides2[slideIndex2 - 1].style.display = "block"; 
             setTimeout(showSlides2, 5000); // Change image every 3 seconds
+        }
+        
+        var slideIndex3 = 0;
+        var oldIndex3 = 0;
+        showSlides3();
+        
+        function showSlides3() {
+            var i3;
+            var slides3 = document.getElementsByClassName("mySlides3");
+            for (i3 = 0; i3 < slides3.length; i3++) {
+                slides3[i3].style.display = "none"; 
+            }
+            slideIndex3++;
+            if (slideIndex3 > slides3.length) {slideIndex3 = 1} 
+            slides3[slideIndex3 - 1].style.display = "block"; 
+            setTimeout(showSlides3, 5000); // Change image every 3 seconds
         }
     </script>
 
