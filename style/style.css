@@ -8,6 +8,54 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+/* Hide the images by default */
+.mySlides3 {
+  display: none;
+}
+
+/* Fading animation */
+.fade-out {
+  -webkit-animation-name: fade-out;
+  -webkit-animation-duration: 5s;
+  animation-name: fade-out;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade-out {
+    0% {opacity: 0} 
+    30% {opacity: 1}
+    70% {opacity: 1}
+    100% {opacity: 0}
+}
+
+@keyframes fade-out {
+    0% {opacity: 0} 
+    30% {opacity: 1}
+    70% {opacity: 1}
+    100% {opacity: 0}
+}
+
+
+
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
