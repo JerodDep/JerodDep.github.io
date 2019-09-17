@@ -189,9 +189,9 @@
       <h1 class="w3-text-light-grey" style="margin-top: 1%; text-align: center">Michigan State University Federal Credit Union Budgeting in VR</h1>
 
       <!-- Slideshow container -->
-      <div class="slideshow-container">
+      <!-- <div class="slideshow-container">
 
-          <!-- Full-width images with number and caption text -->
+           Full-width images with number and caption text
           <div class="mySlides2 fade-out ">
               <img src="images/cop1.png" style="width:100%">
           </div>
@@ -211,7 +211,7 @@
           <div class="mySlides2 fade-out ">
               <img src="images/cop5.png" style="width:100%">
           </div>
-      </div>
+      </div> -->
 
       <p class="w3-opacity" style="margin-left: 0%">  Michigan State University Credit Union is always looking to further students' financial literacy, so for this game they wanted a VR experience to do just that. The idea was having chest being able to be pulled up by a pully that contain different items you would have to buy in the average life (i.e. house, car, etc.). You would then take those items and place them on a table to "purchase" them and show up on your finance board. The goal is to purchase all of the things you'd want without going over you monthly income. Using the Oculus Quest as our platform, it was a big challenge of being as efficient as possible. One of the easiest cuts to performance is a high vertices count. To help aleviate that I tried to minimize the amount of text meshes within the scene (there where a lot!). By making rendermeshes of each UI panel, then applying those textures to a quad, I was able to take down several hundred verts overall. I also designed and created systems for a modular AI that runs off of triggers and events, both of which are created as scriptable objects within Unity. It was built to be expanded by inheriting from the base trigger and action class, which came in handy down the line. Besides the systems for the game, there was a lot of work in creating smooth interactions. For example you have the ability to "buy" and item buy picking it up and placing it on a table. In order to make it easier to hit the table while throwing the item I created a invisible funnel by using varied forces around the edge of the table. </p>
 
@@ -237,10 +237,10 @@
         <h1 class="w3-text-light-grey" style="margin-top: 1%; text-align: center">Sterile Procedure Simulator</h1>
         <!--img class="game-slides" src="images/Balance.png" style="border-style: solid;"-->
         
-        <!-- Slideshow container -->
+        <!-- Slideshow container
         <div class="slideshow-container">
 
-          <!-- Full-width images with number and caption text -->
+          Full-width images with number and caption text
           <div class="mySlides fade-out ">
             <img src="images/Balance.png" style="width:100%">
           </div>
@@ -252,7 +252,7 @@
           <div class="mySlides fade-out ">
             <img src="images/Balance3.png" style="width:100%">
           </div>
-        </div>
+        </div> -->
         
         <p class="w3-opacity" style="margin-left: 0%">    The Michigan State University Learning and Assessment Center was looking for a game to teach students sterile procedure. The issue with teaching the procedure in real life is the vast amount of wasted supplies used for just learning. To get students started on memorized what they need to do I helped created a VR simulation experience. The overarching system was a task manager that was told by the tasks themselves if they have been completed. Therefore we can make any tasks on any objects, and making them anything using inheritance. One of my highest priorities is generally making sure what I code is modular, that way down the line of a project it can easily be adjusted to work with changes. Where that became difficult was adjusting SteamVR libraries to give a better feel for the user. An important part of the procedure is knowing how to open packages properly, to simulate that I built a gesture tracking system. It monitors the user's hand velocity, angular velocity, and position to check if the user has met the requirements set in a scriptable object. This allowed and easy way to make a bunch of different gestures for each unique package. The biggest struggle of an all purpose simulator is making the game usable by all audiences. To make that happen we got rid of a lot of the physics components in VR and made a snappable system that would let objects snap to points they are close to. This alleviated a lot of physics based inconsistancies that would make the player confused.</p>
         
@@ -281,23 +281,23 @@
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
-          <div class="mySlides2 fade-out ">
+          <div class="mySlides3 fade-out ">
             <img src="images/cop1.png" style="width:100%">
           </div>
 
-          <div class="mySlides2 fade-out ">
+          <div class="mySlides3 fade-out ">
             <img src="images/cop2.png" style="width:100%">
           </div>
 
-          <div class="mySlides2 fade-out ">
+          <div class="mySlides3 fade-out ">
             <img src="images/cop3.png" style="width:100%">
           </div>
             
-          <div class="mySlides2 fade-out ">
+          <div class="mySlides3 fade-out ">
             <img src="images/cop4.png" style="width:100%">
           </div>
 
-          <div class="mySlides2 fade-out ">
+          <div class="mySlides3 fade-out ">
             <img src="images/cop5.png" style="width:100%">
           </div>
         </div>
@@ -341,7 +341,7 @@
 
     <!-- Script for Slideshows -->
     <script>
-        var slideIndex = 0;
+        /**var slideIndex = 0;
         var oldIndex = 0;
         showSlides();
         
@@ -371,7 +371,7 @@
             if (slideIndex2 > slides2.length) {slideIndex2 = 1} 
             slides2[slideIndex2 - 1].style.display = "block"; 
             setTimeout(showSlides2, 5000); // Change image every 3 seconds
-        }
+        }**/
         
         var slideIndex3 = 0;
         var oldIndex3 = 0;
